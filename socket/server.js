@@ -5,7 +5,7 @@
  */
 const net = require('net');
 
-const {PORT, HOST} = require('./config')
+const {PORT, HOST} = require('../config')
 
 // 创建一个TCP服务器实例，调用listen函数开始监听指定端口
 // 传入net.createServer()的回调函数将作为”connection“事件的处理函数
@@ -18,9 +18,9 @@ const server = net.createServer(function(sock) {
 
   // 为这个socket实例添加一个"data"事件处理函数
   sock.on('data', function(data) {
-    console.log('DATA ' + sock.remoteAddress + ': ' + data);
+    console.log('来自客户端的数据 ' + sock.remoteAddress + ': ' + data);
     // 回发该数据，客户端将收到来自服务端的数据
-    sock.write('来自服务的的数据："' + data + '"');
+    sock.write('发给客户端的数据的数据："' + data + '"');
   });
 
   // 为这个socket实例添加一个"close"事件处理函数

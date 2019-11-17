@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wuyxp/tcp-http/issues"
   },
-  "homepage": "https://github.com/wuyxp/tcp-http#readme"
+  "homepage": "https://github.com/wuyxp/tcp-http#readme",
+  "dependencies": {
+    "tracer": "^1.0.1"
+  }
 }
