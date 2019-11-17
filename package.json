@@ -1,0 +1,19 @@
+{
+  "name": "tcp-http",
+  "version": "1.0.0",
+  "description": "简单的tcp和http服务的实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyxp/tcp-http.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuyxp/tcp-http/issues"
+  },
+  "homepage": "https://github.com/wuyxp/tcp-http#readme"
+}
